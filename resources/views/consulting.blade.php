@@ -43,7 +43,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('services') }}">
+                <a class="nav-link" href="{{ route('services.index') }}">
                     Servicios
                 </a>
             </li>
