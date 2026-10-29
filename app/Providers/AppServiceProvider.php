@@ -20,7 +20,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        if (config('app.env') === 'production') {
+        // Forzar HTTPS en cualquier entorno que no sea local, o si APP_URL ya usa https
+        if (! $this->app->environment('local') || str_starts_with(config('app.url'), 'https://')) {
             URL::forceScheme('https');
         }
     }

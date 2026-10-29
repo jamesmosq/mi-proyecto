@@ -1,45 +1,9 @@
-<!doctype html>
-<html lang="en" data-bs-theme="light">
-  <head>
-    <!-- Required meta tags: charset must come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+@extends('layouts.app')
 
-    <!-- Bootstrap CSS v5.3.8 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    >
-    <!-- Bootstrap Icons v1.13.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-      rel="stylesheet"
-      integrity="sha384-CK2SzKma4jA5H/MXDUU7i1TqZlCFaD4T01vtyDFvPlD97JQyS+IsSh1nI2EFbpyk"
-      crossorigin="anonymous"
-    >
-  </head>
+@section('title', 'Prueba')
 
-  <body>
-    <header>
-      <!-- place the navbar here: bs5-navbar -->
-    </header>
+@section('content')
+    <div class="container mt-5">
 
-    <main class="container py-4">
-      
-    </main>
-
-    <footer>
-      <!-- place the footer here: bs5-footer -->
-    </footer>
-
-    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+    </div>
+@endsection

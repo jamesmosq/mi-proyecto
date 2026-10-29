@@ -1,69 +1,24 @@
-<!doctype html>
-<html lang="en" data-bs-theme="dark">
-    <head>
-        <title>Asesorias</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+@extends('layouts.app')
 
-        <!-- Bootstrap CSS v5.3.8 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-            crossorigin="anonymous"
-        />
-    </head>
+@section('title', 'Asesorías')
 
-    <body>
-        <header>
-            <!-- place navbar here -->
+@section('content')
+    <!-- Título -->
+    <div class="container mt-5">
 
-<nav class="navbar navbar-expand-sm bg-success navbar-dark">
-    <div class="container-fluid">
+        <div class="text-center mb-5">
 
-        <ul class="navbar-nav">
+            <h1>Asesorías</h1>
 
-            <li class="nav-item">
-                <a class="nav-link active" href="{{ route('home') }}">
-                    Inicio
-                </a>
-            </li>
+            <p class="lead">
+                Te acompañamos en decisiones de tecnología, desarrollo de software y transformación digital.
+            </p>
 
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('clients') }}">
-                    Clientes
-                </a>
-            </li>
+        </div>
 
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('contact') }}">
-                    Contacto
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('services.index') }}">
-                    Servicios
-                </a>
-            </li>
-
-        </ul>
+        <div class="text-center">
+            <a href="{{ route('contact') }}" class="btn btn-success">Solicitar una asesoría</a>
+        </div>
 
     </div>
-</nav>
-
-
-        </header>
-        <main></main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"
-        ></script>
-    </body>
-</html>
+@endsection
