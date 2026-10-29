@@ -28,7 +28,7 @@
         <a class="nav-link" href="{{ route('clients') }}">Clientes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('services') }}">Servicios</a>
+        <a class="nav-link" href="{{ route('services.index') }}">Servicios</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('contact') }}">Contacto</a>
